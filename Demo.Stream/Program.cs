@@ -7,7 +7,7 @@ namespace Demo.Stream
     {
         static void Main(string[] args)
         {
-            string filePath = "MyFiel.txt";
+            string filePath = "MyFile.txt";
             File.WriteAllText(filePath, $"[{DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss.fff tt")}] Hello World!");
 
             byte[] bytes = Encoding.ASCII.GetBytes($"\n[{DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss.fff tt")}] This is a BufferedStream demo!");
